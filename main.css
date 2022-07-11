@@ -291,6 +291,7 @@
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%); 
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
    
 }
 .four-box-content .hidden{
@@ -436,30 +437,82 @@
     font-size: 14px;
 }
 /* hover */
-.banner-text:hover{
-    background-color: #3498db;
-    opacity: 1;
+.four-images-1:hover .banner-text{
+    background: #3498db;
 }
-.banner-text:hover h2{
+.four-images-1:hover h2{
     color: #fff;
 }
-.banner-text:hover p{
+.four-images-1:hover p{
     color: #fff;
 }
-.banner-text:hover a h5{
-    color: #fff;
-    text-decoration: underline;
-}
-.banner-text:hover a i{
+.four-images-1:hover a h5{
     color: #fff;
     text-decoration: underline;
 }
+.four-images-1:hover a i{
+    color: #fff;
+    text-decoration: underline;
+}
+.four-images-2:hover .banner-text{
+    background: #3498db;
+}
+.four-images-2:hover h2{
+    color: #fff;
+}
+.four-images-2:hover p{
+    color: #fff;
+}
+.four-images-2:hover a h5{
+    color: #fff;
+    text-decoration: underline;
+}
+.four-images-2:hover a i{
+    color: #fff;
+    text-decoration: underline;
+}
+.four-images-3:hover .banner-text{
+    background: #3498db;
+}
+.four-images-3:hover h2{
+    color: #fff;
+}
+.four-images-3:hover p{
+    color: #fff;
+}
+.four-images-3:hover a h5{
+    color: #fff;
+    text-decoration: underline;
+}
+.four-images-3:hover a i{
+    color: #fff;
+    text-decoration: underline;
+}
+.four-images-4:hover .banner-text{
+    background: #3498db;
+}
+.four-images-4:hover h2{
+    color: #fff;
+}
+.four-images-4:hover p{
+    color: #fff;
+}
+.four-images-4:hover a h5{
+    color: #fff;
+    text-decoration: underline;
+}
+.four-images-4:hover a i{
+    color: #fff;
+    text-decoration: underline;
+}
+
 .four-images-3{
     margin-top: 30px;
 }
 .four-images-4{
     margin-top: 30px;
 }
+
 
 /* part-4 */
 /* features */
@@ -693,15 +746,25 @@
     color: #fff;
 }
 
+
 /* portfolio-images */
+.portfolio-images-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
 .portfolio-card{
     position: relative;
     height: 350px;
     width: 400px;
     overflow: hidden;
+    margin: 20px 10px 0px 10px;
 }
 .portfolio-card img{
-    max-width: 100%;
+    height: 350px;
+    width: 400px;
+    overflow: hidden; 
 }
 .portfolio-image-content{
     display: flex;
@@ -710,7 +773,7 @@
     position: absolute; 
     left: 0;
     top: 0;
-    height: 316px;
+    height: 350px;
     width: 400px;
     line-height: 20px;
     background: rgba(0, 0, 0, 0.41);
@@ -722,16 +785,19 @@
 .portfolio-card:hover .link{
     margin-left: 10px;
 }
-.portfolio-card:hover .h3{
+.portfolio-card:hover .link i{
+    margin-right: 5px;
+}
+.portfolio-card:hover h3{
     margin-left: 10px;
 }
-.portfolio-card:hover .h4{
+.portfolio-card:hover h4{
     margin-left: 10px;
 }
 
 .portfolio-card:hover img{
     transform: scale(1.1);
-    overflow: hidden;
+    /* overflow: hidden; */
 } 
 .portfolio-card:hover .portfolio-image-content{
     opacity: 0.96;
@@ -752,4 +818,92 @@
     font-weight: 400;
     margin-bottom: 10px;
 }
+
+/* team */
+.team-container{
+    background-color: #f7fbfe;
+    height: 620px;
+}
+/* section-1 */
+.team-header{
+    text-align: center;
+    padding: 20px;
+}
+.team-image-1{
+    height: 430px;
+    width: 330px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+.team-header h1{
+    font-size: 32px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #222222;
+}
+.team-header p{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    margin: 15px 0 0 0;
+}
+/* section-2 */
+.team-images-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.image-1-icon{
+    position: relative;
+}
+.icon-team{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 330px;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.85);
+}
+.icon-team i{
+    margin: 10px 15px 0px 15px;
+    align-items: center;
+}
+.team-info{
+    padding: 20px;
+}
+.team-info h3{
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #222222;
+}
+.team-info h5{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    color: #aaaaaa;
+    margin: 10px 0 0 0;
+}
+.icon-team i{
+    text-decoration: none;
+    font-size: 20px;
+}
+/* hover */
+.team-image-1:hover .icon-team{
+    opacity: 1;
+}
+
+
+
+
 
