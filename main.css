@@ -14,11 +14,9 @@
     box-sizing: border-box;
     padding: 12px 0;
     position: fixed; 
-    z-index: 99;
+    z-index: 997;
 }
-#intop .intop-scrolled{
-    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%); 
-}
+
 
 /* vesperr */
 .logo h1 a{
@@ -1247,6 +1245,12 @@
 form input{
     width: 450px;
     height: 30px;
+}
+.contact-input input:focus{
+    outline-color: #3498db;
+}
+.contact-input textarea:focus{
+    outline-color: #3498db;
 }
 .send button{
     text-decoration: none;
