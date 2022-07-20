@@ -1,5 +1,6 @@
 .full-page{
     margin: auto;
+    width: 1500px;
 }
 /*top page*/
 /*section 1*/
@@ -14,7 +15,8 @@
     box-sizing: border-box;
     padding: 12px 0;
     position: fixed; 
-    z-index: 997;
+    z-index: 99;
+    width: 100%;
 }
 
 
@@ -104,6 +106,25 @@
 .image{
     width: 50%;
 }
+.up-down{
+    animation: infiniteupdown;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all 1s;
+}
+@keyframes infiniteupdown{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 .head{
     margin: 0 0 10px 0;
     font-size: 50px;
